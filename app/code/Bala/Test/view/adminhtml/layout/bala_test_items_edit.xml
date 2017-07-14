@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Bala. All rights reserved.
+ */
+-->
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="admin-2columns-left" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="left">
+            <block class="Bala\Test\Block\Adminhtml\Items\Edit\Tabs" name="bala_test_items_edit_tabs">
+                <block class="Bala\Test\Block\Adminhtml\Items\Edit\Tab\Main" name="bala_test_items_edit_tab_main"/>
+                <action method="addTab">
+                    <argument name="name" xsi:type="string">main_section</argument>
+                    <argument name="block" xsi:type="string">bala_test_items_edit_tab_main</argument>
+                </action>
+            </block>
+        </referenceContainer>
+        <referenceContainer name="content">
+            <block class="Bala\Test\Block\Adminhtml\Items\Edit" name="test_items_edit"/>
+        </referenceContainer>
+    </body>
+</page>

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Bala. All rights reserved.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Backend/etc/menu.xsd">
+    <menu>
+        <add id="bala::base" title="Bala" module="Bala_Test" sortOrder="90" resource="Bala_Test::sample"/>
+        <add id="bala_test::test" title="Items" module="Bala_Test" sortOrder="10" parent="bala::base" action="bala_test/items/" resource="Bala_Test::items"/>
+    </menu>
+</config>
